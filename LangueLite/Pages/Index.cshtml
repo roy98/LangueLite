@@ -4,7 +4,151 @@
     ViewData["Title"] = "Accueil";
 }
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" alt="">
+
+            <div class="container">
+                <div class="carousel-caption text-start">
+                    <h1>Welcome to LANGUELITE.</h1>
+                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>New features today.</h1>
+                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" alt="">
+            <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1>One more for good measure.</h1>
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+
+
+<!-- Feature
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="features my-5 container-fluid">
+    <h2 style="text-align: center" class="my-5">Our Features</h2>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="py-5">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+                <h4>Instant traduction</h4>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-md-4">
+            <div class="py-5">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+                <h4>Dictionary</h4>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-md-4">
+            <div class="py-5">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+                <h4>More than 2000 language</h4>
+                <p>And lastly this, the third column of representative placeholder content.</p>
+            </div>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+</div>
+
+<!-- Pricing
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container-fluid pricing my-5">
+    <h2 style="text-align: center" class="my-5">Our Prices</h2>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 mt-5 shadow-sm pointer" style="border-bottom: none!important; min-height: 320px">
+                <div class="card-body py-4">
+                    <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/month</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                </div>
+                <div class="card-bottom py-3">
+                    <h4 class="my-0 fw-normal text-white">Free trial</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 mt-3 shadow-sm border-primary pointer" style="border-bottom: none!important; min-height: 351px">
+                <div class="card-body py-4">
+                    <h1 class="card-title pricing-card-title">$9.99<small class="text-muted fw-light">/month</small></h1>
+                    <ul class="list-unstyled mt-3 py-3 mb-4">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                </div>
+                <div class="card-bottom py-3">
+                    <h4 class="my-0 fw-normal text-white">Personal</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 shadow-sm mt-5 pointer" style="border-bottom: none!important; min-height: 320px">
+                <div class="card-body py-4">
+                    <h1 class="card-title pricing-card-title">$49.99<small class="text-muted fw-light">/month</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                </div>
+                <div class="card-bottom py-3">
+                    <h4 class="my-0 fw-normal text-white">Business</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -33,12 +33,28 @@ footer {
 
 .f-title {
     font-size: 9px;
-    font-weight: 300
+    font-weight: 300;
+    color: #fff !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .f-title:visited {
+        color: #fff;
+    }
+
+footer a.nav-link {
+    color: #fff !important;
+    font-size: 10px;
+}
+
+.sidebar-blue {
+    background-color: var(--main-color);
 }
 
 @media only screen and (min-width: 1400px) {
     .f-title {
-        font-size: 12px!important;
+        font-size: 12px !important;
     }
 }
 
@@ -67,7 +83,19 @@ a.nav-link {
     }
 
     .floating-btn {
-        bottom: 80px!important;
+        bottom: 80px !important;
+    }
+
+    .sidebar-blue {
+        display: none !important;
+    }
+
+    .carousel-item {
+        height: 32rem;
+    }
+
+    .carousel-item > img {
+        height: 32rem;
     }
 }
 
@@ -114,4 +142,71 @@ a.nav-link {
 
 .pointer {
     cursor: pointer
+}
+
+footer input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+    background-color: cadetblue;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 42rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 42rem;
+}
+
+/* Center align the text within the three columns below the carousel */
+.features .col-md-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.features .col-md-4 > div {
+    background-color: cadetblue;
+}
+
+.features .col-md-4 h4 {
+    font-weight: 300;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+/* rtl:begin:ignore */
+.features .col-md-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.card-bottom {
+    background-color: darkcyan
+}
+
+.pricing .card {
+    background-color: cadetblue;
 }
