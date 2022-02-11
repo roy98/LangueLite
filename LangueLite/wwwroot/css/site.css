@@ -1,0 +1,117 @@
+:root {
+    --main-color: #1473E6;
+    --footer-semi-color: #1473e680;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+footer {
+    font-weight: 300;
+    position: relative
+}
+
+.f-title {
+    font-size: 9px;
+    font-weight: 300
+}
+
+@media only screen and (min-width: 1400px) {
+    .f-title {
+        font-size: 12px!important;
+    }
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+a.nav-link {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+    a.nav-link {
+        font-size: 10px;
+    }
+
+    .header-btn {
+        font-size: 10px;
+    }
+
+    li.nav-item.px-2 {
+        padding-left: 0 !important;
+    }
+
+    .floating-btn {
+        bottom: 80px!important;
+    }
+}
+
+.header-btn {
+    font-size: 12px;
+    border: 1.5px solid #fff;
+}
+
+.navbar-blue {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.bg-blue {
+    background-color: var(--main-color);
+}
+
+.bg-semi-blue {
+    background-color: var(--footer-semi-color);
+}
+
+.navbar-blue a, .navbar-blue button {
+    color: #fff !important;
+    font-weight: 300;
+}
+
+.navbar-blue .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border-color: rgba(255,255,255,.1);
+}
+
+.navbar-blue .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.floating-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 120px;
+    right: 5px;
+    cursor: pointer
+}
+
+.pointer {
+    cursor: pointer
+}

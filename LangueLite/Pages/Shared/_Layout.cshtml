@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LangueLite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LangueLite.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-blue box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-page="/Index">LANGUELITE</a>
+                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                        <ul class="navbar-nav flex-grow-1 flex-sm-grow-0">
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-dark active" asp-area="" asp-page="/Index">HOME</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">ABOUT US</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">DJED</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">LANGUAGES</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">TCHAT</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">CONTACT US</a>
+                            </li>
+                        </ul>
+                        <div class="d-sm-block d-md-none">
+                            <button type="button" class="btn header-btn">SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <button type="button" class="btn header-btn">SIGN UP</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container flex-grow-1">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        @*    <footer class="border-top footer text-muted">
+            <div class="container-fluid">
+            &copy; 2022 - LangueLite - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </div>
+            </footer>*@
+
+        <div class="container-fluid">
+            <footer class="pt-4">
+                <div class="row bg-semi-blue py-4 text-white">
+                    <div class="col-2 col-sm-1">
+                        <h5 class="f-title">HOME</h5>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                        <h5 class="f-title">ABOUT US</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                        <h5 class="f-title">DJED</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                        <h5 class="f-title">LANGUAGE</h5>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                        <h5 class="f-title">TCHAT</h5>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                        <h5 class="f-title">CONTACT US</h5>
+                    </div>
+
+                    <div class="col-4 offset-1 d-none d-sm-block">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div onclick="document.body.scrollIntoView({behavior: 'smooth'})" class="floating-btn">
+                        <a><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between pt-3 bg-blue mt-0 text-white px-2" style="margin-left:-12px;margin-right:-12px">
+                    <p>&copy; 2022 - LangueLite, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="text-white fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="text-white fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="text-white fa fa-facebook" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/1ccc837a13.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
