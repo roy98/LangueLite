@@ -210,3 +210,25 @@ footer input:focus {
 .pricing .card {
     background-color: cadetblue;
 }
+
+.pricing, .features {
+    margin-top: 5.5rem !important;
+}
+
+.stats {
+    margin-top: 6rem !important;
+    background-color: var(--main-color);
+    color: #fff!important;
+}
+
+.stats .row .col-sm-3 {
+    text-align: center;
+}
+
+.stats .row .col-sm-3 h4 {
+    font-weight: 300;
+}
+
+.stats .row .col-sm-3 .stat {
+    font-size: 5rem;
+} 
