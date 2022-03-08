@@ -70,8 +70,13 @@ a.nav-link {
     font-size: 12px;
 }
 
+.nav-link.active {
+    background-color: #0950a5f0;
+    padding: 0.5rem
+}
+
 @media only screen and (max-width: 800px) {
-    a.nav-link {
+    a .nav-link {
         font-size: 10px;
     }
 

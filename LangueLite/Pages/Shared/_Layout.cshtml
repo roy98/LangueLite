@@ -26,13 +26,13 @@
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
                         <ul class="navbar-nav flex-grow-1 flex-sm-grow-0">
                             <li class="nav-item px-2">
-                                <a class="nav-link text-dark active" asp-area="" asp-page="/Index">HOME</a>
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">HOME</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/About">ABOUT US</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link text-dark disabled text-muted" asp-area="" asp-page="/Index">DJED</a>
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Djed">DJED</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Languages">LANGUAGES</a>
@@ -41,7 +41,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Tchat">TCHAT</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link text-dark" href="/Index#contact-us">CONTACT US</a>
+                                <a class="nav-link text-dark" href="/#contact-us">CONTACT US</a>
                             </li>
                         </ul>
                         <div class="d-sm-block d-md-none">
@@ -57,59 +57,6 @@
 
         <!-- MAIN-->
         <div class="flex-grow-1 d-flex flex-row w-100" style="margin-top: 3.4rem;background-color:aliceblue;color: var(--main-color)">
-            @*            <div class="d-flex flex-column flex-shrink-0 p-3 sidebar-blue" style="width: 240px;margin-right: 0.6rem;">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
-                <span class="fs-4">Sidebar</span>
-                </a>
-                <hr>
-                <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-                Home
-                </a>
-                </li>
-                <li>
-                <a href="#" class="nav-link link-dark">
-                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
-                Dashboard
-                </a>
-                </li>
-                <li>
-                <a href="#" class="nav-link link-dark">
-                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
-                Orders
-                </a>
-                </li>
-                <li>
-                <a href="#" class="nav-link link-dark">
-                <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
-                Products
-                </a>
-                </li>
-                <li>
-                <a href="#" class="nav-link link-dark">
-                <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
-                Customers
-                </a>
-                </li>
-                </ul>
-                <hr>
-                <div class="dropdown">
-                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
-                </a>
-                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-                </div>
-                </div>*@
             <main role="main" class="pb-0 ml-5 w-100">
                 @RenderBody()
             </main>
@@ -182,12 +129,16 @@
         </div>
     </div>
 
-    @*    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/1ccc837a13.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script>
+        $(function() {
+          $('nav a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
