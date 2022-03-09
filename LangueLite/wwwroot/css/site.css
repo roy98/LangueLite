@@ -293,7 +293,7 @@ footer input:focus {
 
 .vision .vision-cart {
     background-color: var(--blue-light);
-    min-height: 200px;
+    min-height: 250px;
 }
 
 .mission {
@@ -342,5 +342,39 @@ footer input:focus {
         border-top: 1px solid #7a76761f;
         border-bottom: 1px solid #7a76761f;
     }
+}
+
+.mission ul > li {
+    margin: 1.2rem;
+}
+
+.vision-cart.cart-1 {
+    background-image: url(../images/vision-1.jpg);
+    object-fit: cover
+}
+
+.vision-cart.cart-2 {
+    background-image: url(../images/vision-2.jpg);
+    object-fit: cover
+}
+
+.vision-cart.cart-3 {
+    background-image: url(../images/vision-3.jpg);
+    object-fit: cover
+}
+
+.vision-cart.cart-4 {
+    background-image: url(../images/vision-4.jpg);
+    object-fit: cover
+}
+
+.vision-cart.cart-5 {
+    background-image: url(../images/vision-5.jpg);
+    object-fit: cover
+}
+
+.vision-cart.cart-6 {
+    background-image: url(../images/vision-6.jpg);
+    object-fit: cover
 }
 /* rtl:end:ignore */
