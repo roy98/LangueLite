@@ -160,7 +160,6 @@ footer input:focus {
 
 /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
     background-color: cadetblue;
 }
 
@@ -185,7 +184,7 @@ footer input:focus {
 
 /* Center align the text within the three columns below the carousel */
 .features .col-md-4 {
-    margin-bottom: 1.5rem;
+    /*margin-bottom: 1.5rem;*/
     text-align: center;
 }
 
@@ -196,7 +195,7 @@ footer input:focus {
     .features .col-md-4 h4 {
         font-weight: 400;
         margin-top: 1.5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
     }
 
     .features .col-md-4 .bd-placeholder-img {
@@ -207,6 +206,7 @@ footer input:focus {
     .features .col-md-4 p {
         margin-right: .75rem;
         margin-left: .75rem;
+        text-align: justify;
     }
 /* rtl:end:ignore */
 
@@ -219,12 +219,32 @@ footer input:focus {
 }
 
 .pricing .card {
-    background-color: var(--blue-light);
+    background-color: #e3f2fd00;
     border: none !important;
     box-shadow: none !important;
+    transform: scale(1);
+    border: none;
+    transition: all ease-in-out 0.5s;
 }
 
-.pricing, .features, .traductors {
+.pricing .card:hover {
+    transform: scale(1.05, 1.1);
+    border: 1px solid!important;
+}
+
+.pricing .card .card-bottom:hover {
+    background-color:  var(--main-color);
+}
+
+.pricing .card .card-bottom:hover h4 span {
+    display: none;
+}
+
+.pricing .card .card-bottom:hover h4::after {
+    content: 'Purchase';
+}
+
+.pricing, .traductors {
     margin-top: 5.5rem !important;
 }
 
