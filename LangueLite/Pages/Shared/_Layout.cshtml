@@ -31,8 +31,23 @@
                             <li class="nav-item px-2">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/About">ABOUT US</a>
                             </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Signup">DJED</a>
+                            <li class="collapse navbar-collapse nav-item px-2" id="navbarNavDarkDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            DJED
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li><a class="dropdown-item" asp-area="" asp-page="/Signup">Creer un compte usager</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" asp-area="" asp-page="/Abonnement">Gerer vos abonnement</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" asp-area="" asp-page="/Paiements">Paiements</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" target='_blank' href='https://www.google.com'>Connexion</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Languages">LANGUAGES</a>
@@ -45,11 +60,11 @@
                             </li>
                         </ul>
                         <div class="d-sm-block d-md-none">
-                            <button type="button" class="btn header-btn">TRY IT OUT</button>
+                            <a type='button' class="btn header-btn" asp-area="" asp-page="/Paiements">Buy it now</a>
                         </div>
                     </div>
                     <div class="d-none d-md-block">
-                        <button type="button" class="btn header-btn">TRY IT OUT</button>
+                        <a type='button' class="btn header-btn" asp-area="" asp-page="/Paiements">Buy it now</a>
                     </div>
                 </div>
             </nav>
