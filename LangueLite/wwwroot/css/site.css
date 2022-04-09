@@ -408,7 +408,6 @@ footer input:focus {
 
 /* SIGN UP PAGE */
 .signup-container {
-    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,7 +415,7 @@ footer input:focus {
 }
 
     .signup-container .card {
-        height: calc(100vh - 160px);
+        height: calc(100vh - 49px);
         width: 100%;
         background-color: #fff;
         position: relative;
