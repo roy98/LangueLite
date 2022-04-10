@@ -575,7 +575,7 @@ footer input:focus {
         position: relative
     }
 
-input[type="text"] {
+input[type="text"], input[type="email"], input[type="date"], input[type="password"], input[type="tel"] {
     width: 100%;
     height: 40px;
     border: none;

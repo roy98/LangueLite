@@ -10,64 +10,48 @@
         <div class="form">
             <div class="left-side">
                 <div class="left-heading">
-                    <h3>DJED</h3>
+                    <h3>DJED - Inscription</h3>
                 </div>
                 <div class="steps-content">
                     <h3>Step <span class="step-number">1</span></h3>
-                    <p class="step-number-content signup-active">Enter your personal information to get closer to us.</p>
-                    <p class="step-number-content d-none">Get to know better by adding................</p>
-                    <p class="step-number-content d-none">Help companies get to know you better by.............</p>
-                    <p class="step-number-content d-none">Add your details...........</p>
+                    <p class="step-number-content signup-active">Veuillez renseigner les informations de l'usager.</p>
+                    <p class="step-number-content d-none">Êtes-vous le tuteur ? Merci de renseigner vos informations.</p>
+                    <p class="step-number-content d-none">Remplissez les informations du profil.</p>
                 </div>
                 <ul class="signup-progress-bar">
-                    <li class="signup-active">Identification usager, Tuteur & Profil</li>
-                    <li>Bouquet</li>
-                    <li>Compte</li>
-                    <li>Paiement</li>
+                    <li class="signup-active">Identification usager</li>
+                    <li>Tuteur</li>
+                    <li>Profil</li>
                 </ul>
             </div>
             <div class="right-side">
                 <div class="signup-main signup-active">
                     <small><i class="fa fa-smile-o"></i></small>
                     <div class="text">
-                        <h2>Your Personal Information</h2>
-                        <p>Enter your personal information to get closer to copanies.</p>
+                        <h2>Information de l'usager</h2>
+                        <p>Veuillez renseigner les informations de l'usager.</p>
                     </div>
                     <div class="input-text">
-                        <div class="input-div"> <input type="text" required require id="user_name"> <span>First Name</span> </div>
-                        <div class="input-div"> <input type="text" required> <span>Last Name</span> </div>
+                        <div class="input-div"> <input type="text" required require id="user_name"> <span>Nom usager</span> </div>
+                        <div class="input-div"> <input type="text" required> <span>Prénom usager</span> </div>
                     </div>
                     <div class="input-text">
-                        <div class="input-div"> <input type="text" required require> <span>Phone number</span> </div>
-                        <div class="input-div"> <input type="text" required require> <span>E-mail Address</span> </div>
+                        <div class="input-div"> <input type="email" required> <span>Courriel usager</span> </div>
+                        <div class="input-div"> <input type="email" required> <span>Confirmer courriel</span> </div>
                     </div>
                     <div class="input-text">
                         <div class="input-div">
-                            <select>
-                                <option>Select Country</option>
-                                <option>India</option>
-                                <option>France</option>
-                                <option>UK</option>
-                                <option>USA</option>
-                                <option>Germany</option>
-                                <option>Russia</option>
-                                <option>China</option>
-                                <option>Japan</option>
-                                <option>Pakistan</option>
-                            </select>
+                            <div class="input-div"> <input type="date" value="2000-01-01" required require id="dob"> <span>Date naissance usager</span> </div>
                         </div>
                         <div class="input-div">
-                            <select>
-                                <option>Select City</option>
-                                <option>New Delhi</option>
-                                <option>Paris</option>
-                                <option>London</option>
-                                <option>Washington D.C.</option>
-                                <option>Berlin</option>
-                                <option>Moscow</option>
-                                <option>Bejing</option>
-                                <option>Tokyo</option>
-                                <option>Islamabad</option>
+                            <select required require>
+                                <option>Choisir Pays</option>
+                                <option>Cameroun</option>
+                                <option>Canada</option>
+                                <option>Germany</option>
+                                <option>Russia</option>
+                                <option>UK</option>
+                                <option>USA</option>
                             </select>
                         </div>
                     </div>
@@ -76,73 +60,71 @@
                 <div class="signup-main">
                     <small><i class="fa fa-smile-o"></i></small>
                     <div class="text">
-                        <h2>Education</h2>
-                        <p>Inform companies about your education life.</p>
+                        <h2>Tuteur</h2>
+                        <p>Êtes-vous le tuteur ? Merci de renseigner vos informations.</p>
                     </div>
                     <div class="input-text">
-                        <div class="input-div"> <input type="text" required require> <span>School Name</span> </div>
-                        <div class="input-div"> <input type="text" required> <span>Board Name</span> </div>
+                        <div class="input-div"> <input type="text" required require id="tuteur_name"> <span>Nom tuteur</span> </div>
+                        <div class="input-div"> <input type="text" required> <span>Prénom tuteur</span> </div>
                     </div>
                     <div class="input-text">
-                        <div class="input-div"> <input type="text" required require> <span>College/University name</span> </div>
+                        <div class="input-div"> <input type="email" required require> <span>Courriel tuteur</span> </div>
+                        <div class="input-div"> <input type="email" required> <span>Confirmer courriel</span> </div>
+                        <div class="input-div"> <input type="password" required require> <span>Mot de passe</span> </div>
+                    </div>
+                    <div class="input-text">
+                        <div class="input-div"> <input type="tel" required require> <span>Téléphone tuteur</span> </div>
+                        <div class="input-div"> <input type="tel" required> <span>Confirmer Téléphone</span> </div>
+                    </div>
+                    <div class="signup-buttons button_space"> <button class="back_button">Back</button> <button class="next_button">Next Step</button> </div>
+                </div>
+                <div class="signup-main">
+                    <small><i class="fa fa-smile-o"></i></small>
+                    <div class="text">
+                        <h2>Profil</h2>
+                        <p>Remplissez les informations du profil.</p>
+                    </div>
+                    <div class="input-text">
+                        <div class="input-div"> <input type="text" required require id="tuteur_name"> <span>Alias</span> </div>
+                    </div>
+                    <div class="input-text">
+                        <div class="input-div"> <input type="password" required require> <span>Mot de passe</span> </div>
+                        <div class="input-div"> <input type="password" required require> <span>Confirmer mot de passe</span> </div>
                     </div>
                     <div class="input-text">
                         <div class="input-div">
-                            <select>
-                                <option>Select Course</option>
-                                <option>BCA</option>
-                                <option>B-TECH</option>
-                                <option>BA</option>
-                                <option>B-COM</option>
-                                <option>B-SC</option>
-                                <option>MBA</option>
-                                <option>MCA</option>
-                                <option>M-COM</option>
-                                <option>M-TECH</option>
+                            <select required require>
+                                <option>Langue officielle</option>
+                                <option>Français</option>
+                                <option>Anglais</option>
+                            </select>
+                        </div>
+                        <div class="input-div">
+                            <select required require>
+                                <option>Langue préférée</option>
+                                <option>Ghomala</option>
+                                <option>Yemba</option>
+                                <option>Medumba</option>
+                                <option>Swahili</option>
                             </select>
                         </div>
                     </div>
-                    <div class="signup-buttons button_space"> <button class="back_button">Back</button> <button class="next_button">Next Step</button> </div>
-                </div>
-                <div class="signup-main">
-                    <small><i class="fa fa-smile-o"></i></small>
-                    <div class="text">
-                        <h2>Work Experiences</h2>
-                        <p>Can you talk about your past work experience?</p>
-                    </div>
                     <div class="input-text">
-                        <div class="input-div"> <input type="text" required require> <span>Experience 1</span> </div>
-                        <div class="input-div"> <input type="text" required require> <span>Position</span> </div>
-                    </div>
-                    <div class="input-text">
-                        <div class="input-div"> <input type="text" required> <span>Experience 2</span> </div>
-                        <div class="input-div"> <input type="text" required> <span>Position</span> </div>
-                    </div>
-                    <div class="input-text">
-                        <div class="input-div"> <input type="text" required> <span>Experience 3</span> </div>
-                        <div class="input-div"> <input type="text" required> <span>Position</span> </div>
-                    </div>
-                    <div class="signup-buttons button_space"> <button class="back_button">Back</button> <button class="next_button">Next Step</button> </div>
-                </div>
-                <div class="signup-main">
-                    <small><i class="fa fa-smile-o"></i></small>
-                    <div class="text">
-                        <h2>User Photo</h2>
-                        <p>Upload your profile picture and share yourself.</p>
-                    </div>
-                    <div class="user_card">
-                        <span></span>
-                        <div class="circle"> <span><img src="https://i.imgur.com/hnwphgM.jpg"></span> </div>
-                        <div class="social"> <span><i class="fa fa-share-alt"></i></span> <span><i class="fa fa-heart"></i></span> </div>
-                        <div class="user_name">
-                            <h3>Peter Hawkins</h3>
-                            <div class="detail">
-                                <p><a href="#">Izmar,Turkey</a>Hiring</p>
-                                <p>17 last day . 94Apply</p>
-                            </div>
+                        <div class="input-div">
+                            <select required require>
+                                <option>Question secrète</option>
+                                <option>Quel est votre livre préféré ?</option>
+                                <option>Quel est votre plat favori ?</option>
+                                <option>Le nom de votre animal de compagnie ?</option>
+                            </select>
+                        </div>
+                        <div class="input-div"> <input type="text" required> <span>Réponse secrete</span> </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Réponse secrete</label>
                         </div>
                     </div>
-                    <div class="signup-buttons button_space"> <button class="back_button">Back</button> <button class="submit_button">Submit</button> </div>
+                    <div class="signup-buttons button_space"> <button class="back_button">Back</button> <button class="next_button">Next Step</button> </div>
                 </div>
                 <div class="signup-main">
                     <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
@@ -150,8 +132,8 @@
                         <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                     </svg>
                     <div class="text congrats">
-                        <h2>Congratulations!</h2>
-                        <p>Thanks Mr./Mrs. <span class="shown_name"></span> your information have been submitted successfully for the future reference we will contact you soon.</p>
+                        <h2>Félicitations!</h2>
+                        <p>Merci Mr./Mrs. <span class="shown_name"></span> Vos informations ont été soumises avec succès pour la référence future, nous vous contacterons bientôt.</p>
                     </div>
                 </div>
             </div>
