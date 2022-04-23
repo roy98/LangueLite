@@ -95,15 +95,28 @@ function contentchange() {
 function validateform() {
     validate = true;
     var validate_inputs = document.querySelectorAll(".signup-main.signup-active input");
-    validate_inputs.forEach(function (vaildate_input) {
-        vaildate_input.classList.remove('warning');
-        if (vaildate_input.hasAttribute('require')) {
-            if (vaildate_input.value.length == 0) {
+    var validate_selects = document.querySelectorAll(".signup-main.signup-active select");
+
+    validate_inputs.forEach(function (validate_input) {
+        validate_input.classList.remove('warning');
+        if (validate_input.hasAttribute('require')) {
+            if (validate_input.value.length == 0) {
                 validate = false;
-                vaildate_input.classList.add('warning');
+                validate_input.classList.add('warning');
             }
         }
     });
+
+    validate_selects?.forEach(function (vaildate_select) {
+        vaildate_select.classList.remove('warning');
+        if (vaildate_select.hasAttribute('require')) {
+            if (vaildate_select.selectedIndex == 0) {
+                validate = false;
+                vaildate_select.classList.add('warning');
+            }
+        }
+    });
+
     return validate;
 
 }
