@@ -28,9 +28,29 @@
                         <p>Veuillez complétez les champs ci-dessous. Les champs avec (*) sont obligatoires</p>
                     </div>
                     <div class="input-text">
-                        <div class="input-div"> <input type="text" required require id="abo_num"> <span>Numéro d'abonnement *</span></div>
+                        <div class="input-div"> <input type="text" required require id="user_alias"> <span>Alias *</span></div>
+                        <div class="input-div">
+                            <select required require>
+                                <option>Choisissez un compte *</option>
+                                <option>Compte 1</option>
+                                <option>Compte 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-text">
+                        <div class="input-div"> <input type="text" disabled required id="abo_new"> <span>Abonnement en cours</span></div>
+                        <div class="input-div">
+                            <select required require>
+                                <option>Type transaction *</option>
+                                <option>MTN</option>
+                                <option>ORANGE</option>
+                                <option>INTERAC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-text">
                         <div class="input-div"> <input type="text" required id="pay_montant"> <span>Référent</span></div>
-                        <div class="form-check form-switch">
+                        <div class="form-check form-switch input-div">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Inconnu ?</label>
                         </div>
@@ -44,17 +64,6 @@
                             </select>
                         </div>
                         <div class="input-div"> <input type="text" required require id="pay_montant"> <span>Montant</span></div>
-                    </div>
-                    <div class="input-text">
-                        <div class="input-div">
-                            <select required require>
-                                <option>Type transaction *</option>
-                                <option>MTN</option>
-                                <option>ORANGE</option>
-                                <option>INTERAC</option>
-                            </select>
-                        </div>                        
-                        <div class="input-div"> <input type="text" required require> <span>Numéro transaction *</span> </div>
                     </div>
                     <div class="signup-buttons"> <button class="next_button">Submit</button> </div>
                 </div>
